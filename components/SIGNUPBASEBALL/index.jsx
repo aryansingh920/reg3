@@ -133,7 +133,7 @@ function SIGNUPBASEBALL(props) {
   };
 
   const onClick = () => {
-    window.location.href = "http://35.72.8.63:1234/";
+    window.location.href = "http://35.72.8.63:5678/";
   };
   const showCroppedImage = useCallback(async () => {
     try {
@@ -414,7 +414,7 @@ function SIGNUPBASEBALL(props) {
                 top: "770px",
               }}
             /> */}
-            <a href="http://35.72.8.63:1234/">
+            <a href="http://35.72.8.63:5678/">
               <button
                 onClick={handleUpload}
                 className="lets-go inter-bold-black-30px "
