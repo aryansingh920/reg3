@@ -237,14 +237,23 @@ function SIGNUPBASEBALL(props) {
             </div>
             <div className="rectangle-6"></div>
             <div className="ois coda-extra-bold-inchworm-46px">{ois}</div>
-            {/* <img
-              className="iconsax-linearusersquare"
-              src="https://anima-uploads.s3.amazonaws.com/projects/636e8b12dd63d44d26a503cc/releases/63d5473d0a7b05b1acab5225/img/iconsax-linear-usersquare-1.svg"
-              alt="Iconsax/Linear/usersquare"
-            /> */}
             <div className="eazy inter-bold-white-21px">SIGN UP</div>
             <img className="base-1" src={base1} alt="BASE 1" />
             {/* <div className="rectangle-61"></div> */}
+            <img
+              class="iconsax-linearcamera-m6WwqA"
+              data-id="170:2432"
+              src="https://cdn.animaapp.com/projects/63ece14667db4bb19c023a64/releases/63ed3ddd05d0cd1ecddaf81a/img/iconsax-linear-camera-1.svg"
+              anima-src="https://cdn.animaapp.com/projects/63ece14667db4bb19c023a64/releases/63ed3ddd05d0cd1ecddaf81a/img/iconsax-linear-camera-1.svg"
+              alt="Iconsax/Linear/camera"
+              style={{
+                position: "absolute",
+                zIndex: previewUrl ? 0 : 1,
+                top: "450px",
+                left: "1145px",
+              }}
+            ></img>
+            <div className="rectangle-63"></div>
             <div className="rectangle-61">
               {/* <a
                 href={useCanvas}
@@ -311,14 +320,27 @@ function SIGNUPBASEBALL(props) {
                   />
                 )}
               </div> */}
+
               <input
                 type="file"
+                id="file"
                 onChange={(event) => {
                   handleImageChange(event);
                   // console.log("Called");
                 }}
-                style={{ position: "relative", zIndex: "1000" }}
+                style={{
+                  position: "relative",
+                  zIndex: "1000",
+                  display: "none",
+                }}
               />
+              <label
+                className="inter-normal-mercury-30px "
+                style={{ position: "relative", zIndex: "1000" }}
+                for="file"
+              >
+                BROWSE
+              </label>
               {previewUrl && (
                 <>
                   {/* <img
@@ -334,7 +356,7 @@ function SIGNUPBASEBALL(props) {
                 </>
               )}
               {/* <Cropper
-                image={previewUrl}
+                image={previewUrl}1
                 crop={crop}
                 zoom={zoom}
                 aspect={4 / 3}
@@ -344,6 +366,17 @@ function SIGNUPBASEBALL(props) {
                   setCroppedArea(croppedArea);
                 }}
               /> */}
+              {/* <img
+                class="iconsax-linearcamera-m6WwqA"
+                data-id="170:2432"
+                src="https://cdn.animaapp.com/projects/63ece14667db4bb19c023a64/releases/63ed3ddd05d0cd1ecddaf81a/img/iconsax-linear-camera-1.svg"
+                anima-src="https://cdn.animaapp.com/projects/63ece14667db4bb19c023a64/releases/63ed3ddd05d0cd1ecddaf81a/img/iconsax-linear-camera-1.svg"
+                alt="Iconsax/Linear/camera"
+                style={{
+                  position: "absolute",
+                  left: "310px",
+                }}
+              ></img> */}
               <div className="App">
                 <div className="cropper">
                   <Cropper
