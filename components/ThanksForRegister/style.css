@@ -1,0 +1,43 @@
+.thank-you-for-registering {
+  position: absolute;
+  width: 699px;
+  height: 56px;
+  left: 824px;
+  top: 289px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  /* identical to box height */
+
+  color: #b8ff5d;
+}
+
+.hello {
+  position: absolute;
+  width: 726px;
+  height: 62px;
+  left: 824px;
+  top: 364px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #ffffff;
+}
+
+.img {
+  position: absolute;
+  width: 1197px;
+  height: 941px;
+  left: -107px;
+  top: 119px;
+  background: url(./softball2.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
